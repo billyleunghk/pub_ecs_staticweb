@@ -5,8 +5,8 @@ pipeline {
         repoUri = "427336109184.dkr.ecr.eu-west-1.amazonaws.com/staticweb"
         repoRegistryUrl = "https://427336109184.dkr.ecr.eu-west-1.amazonaws.com"
         registryCreds = 'ecr:eu-west-1:awscreds'
-        cluster = "webform-cluster"
-        service = "webform-svc"
+        cluster = "fargate-euwest"
+        service = "staticweb-svc"
         region = 'eu-west-1'
     }
 
