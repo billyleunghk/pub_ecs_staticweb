@@ -58,7 +58,6 @@ pipeline {
                 }
             }
         }
-        /*
         stage('Deploy to ECS') {
             agent {
                 docker {
@@ -75,6 +74,5 @@ pipeline {
                 }
             }
         }
-        */
     }
 }
