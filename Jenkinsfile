@@ -2,12 +2,12 @@ pipeline {
     agent none  // No global agent, each stage will define its own
     environment {
         DOCKER_CONFIG = '/tmp/.docker'  // Set to a directory with write access
-        repoUri = "427336109184.dkr.ecr.us-east-1.amazonaws.com/staticpage"
-        repoRegistryUrl = "https://427336109184.dkr.ecr.us-east-1.amazonaws.com"
-        registryCreds = 'ecr:us-east-1:awscreds'
+        repoUri = "427336109184.dkr.ecr.eu-west-1.amazonaws.com/staticweb"
+        repoRegistryUrl = "https://427336109184.dkr.ecr.eu-west-1.amazonaws.com"
+        registryCreds = 'ecr:eu-west-1:awscreds'
         cluster = "webform-cluster"
         service = "webform-svc"
-        region = 'us-east-1'
+        region = 'eu-west-1'
     }
 
     stages {
